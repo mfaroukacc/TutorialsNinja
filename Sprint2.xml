@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint2 TestCases">
+     <test name="Logged user could select different Categories">
+        <classes>
+            <class name="testcases.TC05_CommonTests">
+                <methods>
+                    <include name="hoverRandomlyOnAnyCategory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Logged user could select different tags">
+        <classes>
+            <class name="testcases.TC05_CommonTests">
+                <methods>
+                    <include name="chooseOneOfTheFirstThreeTags"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Logged user could add different products to Shopping cart">
+        <classes>
+            <class name="testcases.TC01_HomePageTest">
+                <methods>
+                    <include name="addProductToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Logged user could add different products to Wishlist">
+        <classes>
+            <class name="testcases.TC01_HomePageTest">
+                <methods>
+                    <include name="addProductToWishList"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

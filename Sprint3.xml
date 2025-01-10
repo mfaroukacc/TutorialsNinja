@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint3 TestCases" >
+    <parameter name="browsername" value=""/>
+    <test name="Logged user could add different products to compare list">
+        <classes>
+            <class name="testcases.TC01_HomePageTest">
+                <methods>
+                    <include name="compareItem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Create successful Order">
+        <classes>
+            <class name="testcases.TC04_CheckOutTest">
+                <methods>
+                    <include name="successfullCheckOutProccess"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

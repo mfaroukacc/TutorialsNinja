@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint1 TestCases">
+    <parameter name="browsername" value=""/>
+    <test name="User could register with valid data">
+        <parameter name="browsername" value="firefox"/>
+        <classes>
+            <class name="testcases.TC02_RegisterTest">
+                <methods>
+                    <include name="registerWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="User could log in with valid email and password">
+        <parameter name="browsername" value="chrome-headless"/>
+        <classes>
+            <class name="testcases.TC03_LoginTest">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="User could reset his/her password successfully">
+
+        <classes>
+            <class name="testcases.TC03_LoginTest">
+                <methods>
+                    <include name="successForgetPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Logged User could search for any product">
+        <classes>
+            <class name="testcases.TC01_HomePageTest">
+                <methods>
+                    <include name="searchForProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Logged User could switch between currencies US-Euro">
+        <parameter name="browsername" value="chrome-headless"/>
+        <classes>
+            <class name="testcases.TC01_HomePageTest">
+                <methods>
+                    <include name="changeCurrency"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
