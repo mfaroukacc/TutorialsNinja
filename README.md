@@ -43,7 +43,7 @@ To set up the Tutorial Ninja application locally, follow these steps:
 
 * git clone  
 
-2. Navigate to the project directory:
+2. Navigate to the project directory:https://github.com/mfaroukacc/TutorialsNinja.git
 
 * cd TutorialsNinja
 
